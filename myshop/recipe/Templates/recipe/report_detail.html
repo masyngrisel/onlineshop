@@ -1,0 +1,5 @@
+<h1>{{ report.title }}</h1>
+<p>{{ report.content }}</p>
+{% if report.is_premium %}
+    <p>This is premium content. Please <a href="{% url 'purchase_subscription' %}">purchase a subscription</a> to view it.</p>
+{% endif %}

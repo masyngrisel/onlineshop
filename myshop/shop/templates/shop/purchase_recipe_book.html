@@ -1,0 +1,7 @@
+<h1>{{ recipe_book.title }}</h1>
+<p>{{ recipe_book.description }}</p>
+<p>Price: {{ recipe_book.price }}</p>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Buy Recipe Book</button>
+</form>
